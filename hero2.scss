@@ -71,7 +71,6 @@ $gap: 1rem;
       display: flex;
       flex-direction: column;
       gap: $gap;
-
       img {
         width: $image-size;
         height: $image-size;
@@ -79,8 +78,9 @@ $gap: 1rem;
         opacity: 0;
         animation: fadeInLeft $animation-duration ease-in-out forwards;
         animation-delay: calc(0.3s * var(--image-index));
-      }
 
+        
+      }
       &.images-right img {
          animation-name: fadeInRight;
       }

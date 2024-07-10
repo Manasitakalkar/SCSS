@@ -60,6 +60,10 @@
   animation: fadeInLeft 1.5s ease-in-out forwards;
   animation-delay: calc(0.3s * var(--image-index));
 }
+.hero .hero-content .images img #left-img-1 {
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
 .hero .hero-content .images.images-right img {
   animation-name: fadeInRight;
 }
