@@ -47,6 +47,7 @@ $gap: 1rem;
 }
 
 .hero {
+  border: 2px solid #000;
   position: relative;
   height: 100vh;
   display: flex;
@@ -58,33 +59,89 @@ $gap: 1rem;
   animation: slideInUp 2s ease-in-out forwards;
 
   .hero-content {
+    border: 2px solid #000;
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     width: 100%;
     padding: 2rem;
-
+    .images-left{
+    border: 2px solid #000;
+    height: 50vh;
+    width: 50vh;
+    }
+    .images-right{
+      border: 2px solid #000;
+      height: 50vh;
+      width: 50vh;
+    }
     .images {
+      
       display: flex;
       flex-direction: column;
+      position: relative;
       gap: $gap;
+
       img {
-        width: $image-size;
-        height: $image-size;
+        // width: $image-size;
+        // height: $image-size;
+        // border: 2px solid #000;
+        border-radius: 10px;
         object-fit: cover;
         opacity: 0;
         animation: fadeInLeft $animation-duration ease-in-out forwards;
-        animation-delay: calc(0.3s * var(--image-index));
-
-        
+        animation-delay: calc(0.8s * var(--image-index));
       }
       &.images-right img {
          animation-name: fadeInRight;
       }
+     
+      #left-img-1{
+        height: 270px;
+        width: 270px;
+        position: absolute;
+        bottom: 220px;
+        left: 20px;
+      }
+      #left-img-2{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        bottom: 130px;
+        left: 300px;
+      }
+      #left-img-3{
+        height: 170px;
+        width: 170px;
+        position: absolute;
+        bottom: 20px;
+        left: 60px;
+      }
 
+
+      #right-img-1{
+        height: 170px;
+        width: 170px;
+        position: absolute;
+        bottom: 200px;
+        right: 20px;
+        // filter: blur(0.9px);
+      }
+      #right-img-2{
+        height: 270px;
+        width: 270px;
+        position: absolute;
+        bottom: 220px;
+        right: 240px;
+        
+      }
+      #right-img-3{
+        height: 200px;
+        width: 250px;
+        position: absolute;
+        bottom: 5px;
+        right: 200px;
+      }
       #left-img-1, #right-img-1 {
         --image-index: 1;
       }
@@ -99,6 +156,7 @@ $gap: 1rem;
     }
 
     .text-content {
+      border: 2px solid #000;
       max-width: 600px;
       margin: auto;
       

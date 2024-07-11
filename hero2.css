@@ -29,6 +29,7 @@
   }
 }
 .hero {
+  border: 2px solid #000;
   position: relative;
   height: 100vh;
   display: flex;
@@ -40,28 +41,81 @@
   animation: slideInUp 2s ease-in-out forwards;
 }
 .hero .hero-content {
+  border: 2px solid #000;
   display: flex;
   justify-content: space-around;
   gap: 20px;
   width: 100%;
   padding: 2rem;
 }
+.hero .hero-content .images-left {
+  border: 2px solid #000;
+  height: 50vh;
+  width: 50vh;
+}
+.hero .hero-content .images-right {
+  border: 2px solid #000;
+  height: 50vh;
+  width: 50vh;
+}
 .hero .hero-content .images {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 1rem;
 }
 .hero .hero-content .images img {
-  width: 150px;
-  height: 150px;
+  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0;
   animation: fadeInLeft 1.5s ease-in-out forwards;
-  animation-delay: calc(0.3s * var(--image-index));
+  animation-delay: calc(0.8s * var(--image-index));
 }
 .hero .hero-content .images.images-right img {
   animation-name: fadeInRight;
+}
+.hero .hero-content .images #left-img-1 {
+  height: 270px;
+  width: 270px;
+  position: absolute;
+  bottom: 220px;
+  left: 20px;
+}
+.hero .hero-content .images #left-img-2 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: 130px;
+  left: 300px;
+}
+.hero .hero-content .images #left-img-3 {
+  height: 170px;
+  width: 170px;
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+}
+.hero .hero-content .images #right-img-1 {
+  height: 170px;
+  width: 170px;
+  position: absolute;
+  bottom: 200px;
+  right: 20px;
+}
+.hero .hero-content .images #right-img-2 {
+  height: 270px;
+  width: 270px;
+  position: absolute;
+  bottom: 220px;
+  right: 240px;
+}
+.hero .hero-content .images #right-img-3 {
+  height: 200px;
+  width: 250px;
+  position: absolute;
+  bottom: 5px;
+  right: 200px;
 }
 .hero .hero-content .images #left-img-1, .hero .hero-content .images #right-img-1 {
   --image-index: 1;
@@ -73,6 +127,7 @@
   --image-index: 3;
 }
 .hero .hero-content .text-content {
+  border: 2px solid #000;
   max-width: 600px;
   margin: auto;
 }
